@@ -1,0 +1,38 @@
+facewash=900
+proteinx=480
+butter=180
+shampoo=280
+vinegar=300
+cname=input('enter customer name: ')
+cnum=input('enter customer phone number: ')
+fw=int(input('enter no of facewash:'))
+px=int(input('enter no of proteinx: '))
+b=int(input('enter no of butter: '))
+shampoo=int(input('enter no of  shampoo: '))
+vinegar=int(input('enter no of vinegar: '))
+bill=(facewash*fw)+(proteinx*px)+(butter*b)+(shampoo*shampoo)+(vinegar*vinegar)
+print('bill:',bill)
+if bill>=5000:
+      dis=bill*10/100
+if bill>=3000:
+     dis=bill*8/100
+elif bill>=2000:
+     dis=bill*5/100
+elif bill>=1000:
+     dis=bill*3/100
+if bill>=3000:
+     tax=bill*10/100
+else:
+     tax=bill*18/100
+mainbill=bill-dis+tax
+print('total bill amount: ', mainbill)
+output:
+enter customer name: sravanthi
+enter customer phone number: 9087654321
+enter no of facewash:1
+enter no of proteinx: 1
+enter no of butter: 2
+enter no of  shampoo: 1
+enter no of vinegar: 0
+bill: 1741
+total bill amount:  2002.15
